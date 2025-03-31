@@ -36,7 +36,7 @@ export const navLinks = [
       position: 'Founder of TechGear Shop',
       img: 'assets/review2.png',
       review:
-        'Adrian’s expertise in web development is truly impressive. He delivered a robust and scalable solution for our e-commerce site, and our online sales have significantly increased since the launch. He’s a true professional! Fantastic work.',
+        'Adrian\'s expertise in web development is truly impressive. He delivered a robust and scalable solution for our e-commerce site, and our online sales have significantly increased since the launch. He\'s a true professional! Fantastic work.',
     },
     {
       id: 3,
@@ -44,7 +44,7 @@ export const navLinks = [
       position: 'Project Manager at UrbanTech ',
       img: 'assets/review3.png',
       review:
-        'I can’t say enough good things about Adrian. He was able to take our complex project requirements and turn them into a seamless, functional website. His problem-solving abilities are outstanding.',
+        'I can\'t say enough good things about Adrian. He was able to take our complex project requirements and turn them into a seamless, functional website. His problem-solving abilities are outstanding.',
     },
     {
       id: 4,
@@ -52,19 +52,19 @@ export const navLinks = [
       position: 'CEO of BrightStar Enterprises',
       img: 'assets/review4.png',
       review:
-        'Adrian was a pleasure to work with. He understood our requirements perfectly and delivered a website that exceeded our expectations. His skills in both frontend backend dev are top-notch.',
+        'Adrian was a pleasure to work with. He understood our requirements perfectly and delivered a website that exceeded our expectations. His skills in both frontend and backend dev are top-notch.',
     },
   ];
   
   export const myProjects = [
     {
-      title: 'Podcastr - AI Podcast Platform',
-      desc: 'Podcastr is a revolutionary Software-as-a-Service platform that transforms the way podcasts are created. With advanced AI-powered features like text-to-multiple-voices functionality, it allows creators to generate diverse voiceovers from a single text input.',
+      title: 'Weather Forecast App',
+      desc: 'The Weather Forecast App provides real-time weather updates and forecasts for any location worldwide. It features a user-friendly interface with detailed weather data, including temperature, humidity, wind speed, and more.',
       subdesc:
-        'Built as a unique Software-as-a-Service app with Next.js 14, Tailwind CSS, TypeScript, Framer Motion and Convex, Podcastr is designed for optimal performance and scalability.',
-      href: 'https://www.youtube.com/watch?v=zfAb95tJvZQ',
+        'Built with React.js, Tailwind CSS, and OpenWeather API, this app offers accurate and up-to-date weather information, making it an essential tool for planning your day.',
+      href: 'https://www.example.com/weather-forecast',
       texture: '/textures/project/project1.mp4',
-      logo: '/assets/project-logo1.png',
+      logo: '/assets/weather-app-logo.png',
       logoStyle: {
         backgroundColor: '#2A1816',
         border: '0.2px solid #36201D',
@@ -84,8 +84,8 @@ export const navLinks = [
         },
         {
           id: 3,
-          name: 'TypeScript',
-          path: '/assets/typescript.png',
+          name: 'JavaScript',
+          path: '/assets/javascript.png',
         },
         {
           id: 4,
@@ -245,6 +245,8 @@ export const navLinks = [
       ],
     },
   ];
+  
+  export const myProjectsTitle = 'My Projects';
   
   export const calculateSizes = (isSmall, isMobile, isTablet) => {
     return {
