@@ -13,8 +13,15 @@ export default defineConfig({
           vendor: ['react', 'react-dom'],
           three: ['three', '@react-three/fiber', '@react-three/drei'],
         },
+        entryFileNames: 'assets/[name].[hash].js',
+        chunkFileNames: 'assets/[name].[hash].js',
+        assetFileNames: 'assets/[name].[hash].[ext]'
       },
     },
+    modulePreload: false,
+    target: 'esnext',
+    minify: 'terser',
+    sourcemap: true
   },
   server: {
     port: 3000,
@@ -22,4 +29,7 @@ export default defineConfig({
   preview: {
     port: 3000,
   },
+  optimizeDeps: {
+    include: ['react', 'react-dom', 'three', '@react-three/fiber', '@react-three/drei']
+  }
 })
