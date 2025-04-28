@@ -14,20 +14,18 @@ pipeline {
         }
         stage('Build Docker Image') {
             steps {
-                script {
-                    docker.build("${IMAGE_NAME}:latest")
-                }
+                sh "docker build -t ${IMAGE_NAME}:latest ."
             }
         }
         stage('Run Container') {
             steps {
-                script {
-                    // Stop and remove any existing container
-                    sh "docker rm -f ${CONTAINER_NAME} || true"
-                    // Run the new container
-                    sh "docker run -d --name ${CONTAINER_NAME} -p 80:80 ${IMAGE_NAME}:latest"
-                }
+                // Stop and remove any existing container
+                sh "docker rm -f ${CONTAINER_NAME} || true"
+                // Run the new container
+                sh "docker run -d --name ${CONTAINER_NAME} -p 80:80 ${IMAGE_NAME}:latest"
             }
         }
     }
 } 
+
+e8a5a3ae19844ab4bb58b127282d41d8
