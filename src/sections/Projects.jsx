@@ -8,7 +8,7 @@ import DemoComputer from "../components/DemoComputer.jsx";
 import { OrbitControls } from "@react-three/drei"
 
 
-const Projects = () => {
+ const Projects = () => {
    
     const[activeIndex, setActiveIndex] = useState(0);
     const currentProject = myProjects[activeIndex];

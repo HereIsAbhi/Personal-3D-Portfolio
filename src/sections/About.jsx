@@ -3,6 +3,7 @@ import Globe from "react-globe.gl";
 import Button from "../components/Button";
 import { useTheme } from '../context/ThemeContext';
 import { motion } from 'framer-motion';
+import WorkExperience from '../components/WorkExperience';
 
 const About = () => {
     const [hasCopied, setHasCopied] = useState(false);
@@ -124,10 +125,10 @@ const About = () => {
                         </motion.div>
                         <div>
                             <p className="grid-headtext">
-                                I work remotely
+                                My work experience
                             </p>
                             <p className="grid-subtext">
-                                I am a remote developer based in India. I am open to working with clients from all over the world. I am available for freelance work.
+                                I am a full-stack developer and public speaker based in India. I am open to working with clients from all over the world.
                             </p>
                             <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
                                 <Button name="Contact Me" isBeam containerClass="w-full mt-10">
@@ -186,6 +187,15 @@ const About = () => {
                     </div>
                 </motion.div>
             </motion.div>
+
+            <div className="mt-16">
+                <h3 className={`text-2xl font-bold mb-8 text-center ${
+                    isDarkMode ? 'text-white' : 'text-gray-900'
+                }`}>
+                    Work Experience
+                </h3>
+                <WorkExperience />
+            </div>
         </section>
     );
 };

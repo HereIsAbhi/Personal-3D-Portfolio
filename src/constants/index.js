@@ -287,4 +287,22 @@ export const navLinks = [
       icon: '/assets/notion.svg',
       animation: 'salute',
     },
+    {
+      id: 4,
+      name: 'Student Organization Oasis',
+      pos: 'Public Speaker',
+      duration: 'Feb 2023 - Present',
+      title: "Conducted interactive tech talks and workshops on emerging technologies, engaging 100+ students.",
+      icon: '/assets/oasis.svg',
+      animation: 'talk',
+    },
+    {
+      id: 5,
+      name: 'E-CELL',
+      pos: 'Public Speaker',
+      duration: 'July 2023 - Dec 2023',
+      title: "Hosted key sessions on entrepreneurship, startup culture, and business innovation.",
+      icon: '/assets/ecell.svg',
+      animation: 'talk',
+    },
   ];
